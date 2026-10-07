@@ -1,0 +1,19 @@
+{
+    "expense": [
+        "receipt", "invoice", "payment",
+        "transaction", "order confirmation",
+        "your trip", "your ride",
+        "subscription", "billing",
+        "tagihan", "pembayaran", "transaksi",
+        "pesanan", "bukti", "struk",
+        "gopay", "ovo", "dana", "qris",
+        "tokopedia", "shopee", "lazada",
+        "gojek", "grab", "traveloka"
+    ],
+    
+    "junk": [
+        "newsletter", "promotion", "marketing",
+        "update", "digest", "unsubscribe",
+        "promo", "diskon", "flash sale"
+    ]
+}
