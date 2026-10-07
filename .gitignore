@@ -1,7 +1,47 @@
-.go/
+# secrets
 .env
 *.env
 credentials.json
 token.json
-backend/bin/
+*.pem
+*.key
+
+# local data
+*.db
+*.sqlite
+*.sqlite3
+
+# go
 .go/
+backend/bin/
+*.exe
+*.test
+*.out
+coverage.out
+
+# flutter / dart
+app/.dart_tool/
+app/.flutter-plugins
+app/.flutter-plugins-dependencies
+app/build/
+app/.packages
+app/pubspec.lock.bak
+app/android/.gradle/
+app/android/local.properties
+app/ios/Pods/
+app/ios/.symlinks/
+
+# nix
+result
+result-*
+.direnv/
+
+# editors
+.idea/
+.vscode/
+*.swp
+*.iml
+
+# os
+.DS_Store
+Thumbs.db
