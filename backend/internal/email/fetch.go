@@ -19,11 +19,11 @@ import (
 
 type RawEmail struct {
 	MessageID string
-	Hash      string 
+	Hash      string
 	Subject   string
 	From      string
 	Date      time.Time
-	Body      string  
+	Body      string
 }
 
 func hashMessageID(messageID string) string {
@@ -181,7 +181,7 @@ func FetchReceipts(days int, alreadyProcessed func(hash string) bool) ([]RawEmai
 
 		bodySet := new(imap.SeqSet)
 		bodySet.AddNum(msg.SeqNum)
-		section := &imap.BodySectionName{Peek: true} 
+		section := &imap.BodySectionName{Peek: true}
 		bodyCh := make(chan *imap.Message, 1)
 		bodyDone := make(chan error, 1)
 		go func() {
@@ -192,7 +192,7 @@ func FetchReceipts(days int, alreadyProcessed func(hash string) bool) ([]RawEmai
 		for m := range bodyCh {
 			bodyMsg = m
 		}
-		
+
 		if err := <-bodyDone; err != nil {
 			log.Printf("body fetch error (%s): %v", subject, err)
 			continue

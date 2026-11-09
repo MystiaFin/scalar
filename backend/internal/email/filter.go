@@ -25,7 +25,7 @@ func getKeywords() (Keywords, error) {
 		if path == "" {
 			path = "keywords.json"
 		}
-		
+
 		b, err := os.ReadFile(path)
 		if err != nil {
 			keywordsErr = fmt.Errorf("unable to read %s: %w", path, err)
