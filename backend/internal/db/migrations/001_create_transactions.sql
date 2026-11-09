@@ -1,0 +1,12 @@
+CREATE TABLE transactions (
+	id          INTEGER PRIMARY KEY AUTOINCREMENT,
+	email_hash  VARCHAR(64) UNIQUE NOT NULL,
+	merchant    VARCHAR(255) NOT NULL,
+	amount      NUMERIC NOT NULL,
+	category    VARCHAR(100) NOT NULL,
+	is_expense  BOOLEAN NOT NULL,
+	date        TEXT NOT NULL,
+	description TEXT NOT NULL DEFAULT '',
+	confirmed   BOOLEAN NOT NULL DEFAULT FALSE,
+	updated_at  TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
