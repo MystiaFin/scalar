@@ -19,19 +19,22 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final _service = TransactionService();
   late Future<List<Transaction>> _transactions;
-  DateTime _selectedMonth = monthOf(DateTime.now());
+
+  DateTime get _selectedMonth => monthNotifier.value;
 
   @override
   void initState() {
     super.initState();
     _transactions = _service.getTransactions();
     categoryFilterNotifier.addListener(_onFilterChanged);
+    monthNotifier.addListener(_onFilterChanged);
     refreshNotifier.addListener(_reload);
   }
 
   @override
   void dispose() {
     categoryFilterNotifier.removeListener(_onFilterChanged);
+    monthNotifier.removeListener(_onFilterChanged);
     refreshNotifier.removeListener(_reload);
     super.dispose();
   }
@@ -198,7 +201,7 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: MonthDropdown(
           value: _selectedMonth,
-          onChanged: (m) => setState(() => _selectedMonth = m),
+          onChanged: (m) => monthNotifier.value = m,
         ),
         actions: [
           IconButton(

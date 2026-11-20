@@ -20,20 +20,25 @@ class ChartPage extends StatefulWidget {
 class _ChartPageState extends State<ChartPage> {
   final _service = TransactionService();
   late Future<List<Transaction>> _transactions;
-  DateTime _selectedMonth = monthOf(DateTime.now());
+
+  DateTime get _selectedMonth => monthNotifier.value;
 
   @override
   void initState() {
     super.initState();
     _transactions = _service.getTransactions();
     refreshNotifier.addListener(_reload);
+    monthNotifier.addListener(_onMonthChanged);
   }
 
   @override
   void dispose() {
     refreshNotifier.removeListener(_reload);
+    monthNotifier.removeListener(_onMonthChanged);
     super.dispose();
   }
+
+  void _onMonthChanged() => setState(() {});
 
   void _reload() => setState(() => _transactions = _service.getTransactions());
 
@@ -199,7 +204,7 @@ class _ChartPageState extends State<ChartPage> {
       appBar: AppBar(
         title: MonthDropdown(
           value: _selectedMonth,
-          onChanged: (m) => setState(() => _selectedMonth = m),
+          onChanged: (m) => monthNotifier.value = m,
         ),
       ),
       body: FutureBuilder<List<Transaction>>(
