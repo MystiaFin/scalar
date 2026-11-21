@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # ./run.sh migrate   create or update the database
 # ./run.sh seed      migrate, then add example transactions
+# ./run.sh serve     start the api server
 # ./run.sh test      run the tests
 set -e
 
@@ -15,9 +16,10 @@ cd backend
 case "$1" in
 	migrate) go run ./cmd/migrate ;;
 	seed) go run ./cmd/seed ;;
+	serve) go run ./cmd/server ;;
 	test) go test ./... ;;
 	*)
-		echo "usage: ./run.sh [migrate|seed|test]"
+		echo "usage: ./run.sh [migrate|seed|serve|test]"
 		exit 1
 		;;
 esac
