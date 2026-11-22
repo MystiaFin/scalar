@@ -2,6 +2,20 @@
 
 Go backend in `backend/`, Flutter app in `app/`.
 
+## Quick start (Linux and macOS with Nix)
+
+The dev shell in `flake.nix` has Go, Flutter, Ollama and `just`.
+
+```bash
+nix develop
+just setup   # backend/.env, dependencies, database, pulls the ollama model
+just dev     # starts ollama, the backend and the app together
+```
+
+`just dev` runs the Linux desktop app pointed at `http://localhost:7225`. For another device, pass its id and the url it can reach the backend on, for example `just dev emulator-5554 http://10.0.2.2:7225`. Run `just` to see every recipe.
+
+To sync email, fill in `SCALAR_EMAIL` and `SCALAR_APP_PASSWORD` in `backend/.env`. `OLLAMA_URL` and `OLLAMA_MODEL` are optional. If Ollama is already running, `just` uses it. Otherwise it starts its own and stops it when `just dev` exits.
+
 ## Database
 
 | Linux and macOS | Windows | What it does |
