@@ -45,3 +45,6 @@ result-*
 # os
 .DS_Store
 Thumbs.db
+
+# just dev
+.dev/
