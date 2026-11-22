@@ -16,7 +16,16 @@
           gopls
           delve
           flutter
+          # flutter linux desktop builds, so they don't pick up a compiler from outside the shell
+          clang
+          cmake
+          ninja
+          pkg-config
           git
+          just
+          ollama
+          curl
+          sqlite
         ];
 
         # keep go build cache inside the repo, not in ~
