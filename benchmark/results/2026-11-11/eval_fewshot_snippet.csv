@@ -1,0 +1,763 @@
+id,is_receipt,gold_merchant,pred_merchant,gold_amount,pred_amount,gold_category,pred_category,gold_is_expense,pred_is_expense,seconds,error,raw
+001,1,Jakaju Thai Tea,Jakaju Thai Tea,15000,15000,food & drink,food & drink,True,True,4.6,,"{
+""merchant"": ""Jakaju Thai Tea"",
+""amount"": 15000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+003,1,GoPay,DOMPET ANAK BANGSA,84000,84000,transfer,transport,False,True,4.7,,"{
+""merchant"": ""DOMPET ANAK BANGSA"",
+""amount"": 84000,
+""category"": ""transport"",
+""is_expense"": true
+}"
+007,1,Google One,Google One,85470,85470,subscription,subscription,True,True,4.1,,"{
+""merchant"": ""Google One"",
+""amount"": 85470,
+""category"": ""subscription"",
+""is_expense"": true
+}"
+009,0,,Google One,,85470,,subscription,,True,4.0,,"{
+""merchant"": ""Google One"",
+""amount"": 85470,
+""category"": ""subscription"",
+""is_expense"": true
+}"
+011,1,Happy Fruits,HAPPY FRUITS,33000,33000,food & drink,food & drink,True,True,4.7,,"{
+""merchant"": ""HAPPY FRUITS"",
+""amount"": 33000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+013,1,Waroenk Kito,Waroenk Kito,35200,35200,food & drink,food & drink,True,True,4.7,,"{
+""merchant"": ""Waroenk Kito"",
+""amount"": 35200,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+022,1,Jago Coffee,jagocoffee,8000,8000,food & drink,food & drink,True,True,4.5,,"{
+""merchant"": ""jagocoffee"",
+""amount"": 8000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+024,0,,Gemini,,0,,subscription,,True,4.8,,"{
+""merchant"": ""Gemini"",
+""amount"": 0,
+""category"": ""subscription"",
+""is_expense"": true
+}"
+025,0,,Google One,,85470,,subscription,,True,4.1,,"{
+""merchant"": ""Google One"",
+""amount"": 85470,
+""category"": ""subscription"",
+""is_expense"": true
+}"
+026,1,Nasi Bebek Cak Rahmad,nasi bebek cak rahmad,13000,13000,food & drink,food & drink,True,True,5.2,,"{
+""merchant"": ""nasi bebek cak rahmad"",
+""amount"": 13000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+028,1,[PENERIMA_1],sewa,2248432,2248432,rent,rent,True,True,4.2,,"{
+""merchant"": ""sewa"",
+""amount"": 2248432,
+""category"": ""rent"",
+""is_expense"": true
+}"
+030,1,Nasi Bebek Cak Rahmad,Nasi Bebek Cak Rahmad,24000,24000,food & drink,food & drink,True,True,4.9,,"{
+""merchant"": ""Nasi Bebek Cak Rahmad"",
+""amount"": 24000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+033,0,,Cloudflare,,0,,other,,False,3.9,,"{
+""merchant"": ""Cloudflare"",
+""amount"": 0,
+""category"": ""other"",
+""is_expense"": false
+}"
+034,1,Nasi Bebek Cak Rahmad,nasi bebek cak rahmad,8000,8000,food & drink,food & drink,True,True,5.1,,"{
+""merchant"": ""nasi bebek cak rahmad"",
+""amount"": 8000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+037,0,,Google,,0,,subscription,,True,3.9,,"{
+""merchant"": ""Google"",
+""amount"": 0,
+""category"": ""subscription"",
+""is_expense"": true
+}"
+042,1,Nasi Bebek Cak Rahmad,nasi bebek cak rahmad,8000,8000,food & drink,food & drink,True,True,5.1,,"{
+""merchant"": ""nasi bebek cak rahmad"",
+""amount"": 8000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+046,0,,Claude by Anthropic,,0,,subscription,,True,4.4,,"{
+""merchant"": ""Claude by Anthropic"",
+""amount"": 0,
+""category"": ""subscription"",
+""is_expense"": true
+}"
+047,1,FamilyMart,FamilyMart,50000,50000,grocery,grocery,True,True,4.1,,"{
+""merchant"": ""FamilyMart"",
+""amount"": 50000,
+""category"": ""grocery"",
+""is_expense"": true
+}"
+050,1,FamilyMart,FamilyMart,17000,17000,grocery,grocery,True,True,4.2,,"{
+""merchant"": ""FamilyMart"",
+""amount"": 17000,
+""category"": ""grocery"",
+""is_expense"": true
+}"
+051,1,Alfamart,Alfamart,4400,4400,grocery,grocery,True,True,4.4,,"{
+""merchant"": ""Alfamart"",
+""amount"": 4400,
+""category"": ""grocery"",
+""is_expense"": true
+}"
+053,1,Bakmi Bangka Apo,Bakmi Bangka Apo,23000,23000,food & drink,food & drink,True,True,4.8,,"{
+""merchant"": ""Bakmi Bangka Apo"",
+""amount"": 23000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+059,1,Warung Sembako,Warung Sembako,2000,2000,grocery,grocery,True,True,4.5,,"{
+""merchant"": ""Warung Sembako"",
+""amount"": 2000,
+""category"": ""grocery"",
+""is_expense"": true
+}"
+064,1,Bicarakan.id,XDT,249000,249000,health,food & drink,True,True,4.4,,"{
+""merchant"": ""XDT"",
+""amount"": 249000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+070,1,Nasi Bebek Cak Rahmad,Nasi Bebek Cak Rahmad,8000,8000,food & drink,food & drink,True,True,5.0,,"{
+""merchant"": ""Nasi Bebek Cak Rahmad"",
+""amount"": 8000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+071,1,Claude,Google Claude,387390,387390,subscription,subscription,True,True,4.1,,"{
+""merchant"": ""Google Claude"",
+""amount"": 387390,
+""category"": ""subscription"",
+""is_expense"": true
+}"
+072,1,Claude,Anthropic,387390,387390,subscription,subscription,True,True,4.0,,"{
+""merchant"": ""Anthropic"",
+""amount"": 387390,
+""category"": ""subscription"",
+""is_expense"": true
+}"
+073,1,Google,Google,10000,10000,other,subscription,False,True,3.9,,"{
+""merchant"": ""Google"",
+""amount"": 10000,
+""category"": ""subscription"",
+""is_expense"": true
+}"
+078,1,Nasi Bebek Cak Rahmad,Nasi Bebek Cak Rahmad,8000,8000,food & drink,food & drink,True,True,5.0,,"{
+""merchant"": ""Nasi Bebek Cak Rahmad"",
+""amount"": 8000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+079,1,Waroenk Kito,WAROENK,35200,35200,food & drink,utilities,True,True,4.3,,"{
+""merchant"": ""WAROENK"",
+""amount"": 35200,
+""category"": ""utilities"",
+""is_expense"": true
+}"
+080,1,TransJakarta,TRANSJAKARTA,3500,3500,transport,transport,True,True,4.4,,"{
+""merchant"": ""TRANSJAKARTA"",
+""amount"": 3500,
+""category"": ""transport"",
+""is_expense"": true
+}"
+081,0,,Cloudflare,,0,,subscription,,False,4.0,,"{
+""merchant"": ""Cloudflare"",
+""amount"": 0,
+""category"": ""subscription"",
+""is_expense"": false
+}"
+084,1,Superindo,Superindo,9385,9385,grocery,grocery,True,True,4.2,,"{
+""merchant"": ""Superindo"",
+""amount"": 9385,
+""category"": ""grocery"",
+""is_expense"": true
+}"
+088,1,Alfamart,Alfamart,21400,21400,grocery,grocery,True,True,7.1,,"{
+""merchant"": ""Alfamart"",
+""amount"": 21400,
+""category"": ""grocery"",
+""is_expense"": true
+}"
+094,1,Waroenk Kito,WAROENK KITO,32000,32000,food & drink,food & drink,True,True,4.8,,"{
+""merchant"": ""WAROENK KITO"",
+""amount"": 32000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+096,1,Nasi Bebek Cak Rahmad,Nasi Bebek Cak Rahmad,8000,8000,food & drink,food & drink,True,True,4.9,,"{
+""merchant"": ""Nasi Bebek Cak Rahmad"",
+""amount"": 8000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+111,1,Google One,Google One,85470,85470,subscription,subscription,True,True,4.1,,"{
+""merchant"": ""Google One"",
+""amount"": 85470,
+""category"": ""subscription"",
+""is_expense"": true
+}"
+112,1,GoPay,DOMPET ANAK BANGSA,10000,10000,transfer,transfer,False,False,4.6,,"{
+""merchant"": ""DOMPET ANAK BANGSA"",
+""amount"": 10000,
+""category"": ""transfer"",
+""is_expense"": false
+}"
+113,1,Warung Sembako,warung sembako,10000,10000,grocery,food & drink,True,True,4.7,,"{
+""merchant"": ""warung sembako"",
+""amount"": 10000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+118,0,,Google,,85470,,subscription,,True,4.0,,"{
+""merchant"": ""Google"",
+""amount"": 85470,
+""category"": ""subscription"",
+""is_expense"": true
+}"
+119,0,,Gemini,,0,,subscription,,True,4.9,,"{
+""merchant"": ""Gemini"",
+""amount"": 0,
+""category"": ""subscription"",
+""is_expense"": true
+}"
+126,1,Waroenk Kito,WAROENK KITO,40700,40700,food & drink,food & drink,True,True,4.7,,"{
+""merchant"": ""WAROENK KITO"",
+""amount"": 40700,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+131,1,[PENERIMA_2],PTCL,8250,8250,installment,transfer,True,True,4.3,,"{
+""merchant"": ""PTCL"",
+""amount"": 8250,
+""category"": ""transfer"",
+""is_expense"": true
+}"
+137,1,Lawson,LAWSON,14500,14500,grocery,grocery,True,True,4.5,,"{
+""merchant"": ""LAWSON"",
+""amount"": 14500,
+""category"": ""grocery"",
+""is_expense"": true
+}"
+138,0,,Cloudflare,,0,,subscription,,True,4.1,,"{
+""merchant"": ""Cloudflare"",
+""amount"": 0,
+""category"": ""subscription"",
+""is_expense"": true
+}"
+140,1,Nasi Bebek Madura,Nasi Bebek Madura Dan Ay,26000,26000,food & drink,food & drink,True,True,5.4,,"{
+""merchant"": ""Nasi Bebek Madura Dan Ay"",
+""amount"": 26000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+142,0,,Google,,0,,subscription,,True,4.4,,"{
+""merchant"": ""Google"",
+""amount"": 0,
+""category"": ""subscription"",
+""is_expense"": true
+}"
+143,1,Alfamart,Alfamart,9300,9300,grocery,grocery,True,True,4.7,,"{
+""merchant"": ""Alfamart"",
+""amount"": 9300,
+""category"": ""grocery"",
+""is_expense"": true
+}"
+148,1,Nasi Bebek Madura,Nasi Bebek Madura,24000,24000,food & drink,food & drink,True,True,5.1,,"{
+""merchant"": ""Nasi Bebek Madura"",
+""amount"": 24000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+150,1,Lamongan Indah,Lamongan Indah,21000,21000,food & drink,other,True,True,4.7,,"{
+""merchant"": ""Lamongan Indah"",
+""amount"": 21000,
+""category"": ""other"",
+""is_expense"": true
+}"
+151,1,Rhale Coffee,RHALE COFFEE,20000,20000,food & drink,food & drink,True,True,4.8,,"{
+""merchant"": ""RHALE COFFEE"",
+""amount"": 20000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+152,1,[PENERIMA_3],myBCA,9000,9000,transfer,transfer,True,False,3.8,,"{
+""merchant"": ""myBCA"",
+""amount"": 9000,
+""category"": ""transfer"",
+""is_expense"": false
+}"
+154,1,Lamongan Indah,Lamongan Indah,21000,21000,food & drink,grocery,True,True,4.0,,"{
+""merchant"": ""Lamongan Indah"",
+""amount"": 21000,
+""category"": ""grocery"",
+""is_expense"": true
+}"
+156,1,TransJakarta,TRANSJAKARTA,3500,3500,transport,transport,True,True,3.9,,"{
+""merchant"": ""TRANSJAKARTA"",
+""amount"": 3500,
+""category"": ""transport"",
+""is_expense"": true
+}"
+157,1,Superindo,Superindo,4190,4190,grocery,grocery,True,True,3.8,,"{
+""merchant"": ""Superindo"",
+""amount"": 4190,
+""category"": ""grocery"",
+""is_expense"": true
+}"
+158,1,Alfamart,Alfamart,11300,11300,grocery,grocery,True,True,3.9,,"{
+""merchant"": ""Alfamart"",
+""amount"": 11300,
+""category"": ""grocery"",
+""is_expense"": true
+}"
+160,1,Alfamart,Alfamart,7900,7900,grocery,grocery,True,True,4.0,,"{
+""merchant"": ""Alfamart"",
+""amount"": 7900,
+""category"": ""grocery"",
+""is_expense"": true
+}"
+161,1,Warteg Fitri,WARTEG FITRI,13000,13000,food & drink,food & drink,True,True,4.2,,"{
+""merchant"": ""WARTEG FITRI"",
+""amount"": 13000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+162,1,[PENERIMA_4],PENERIMA_4,35000,35000,transfer,transfer,True,True,4.0,,"{
+""merchant"": ""PENERIMA_4"",
+""amount"": 35000,
+""category"": ""transfer"",
+""is_expense"": true
+}"
+163,1,Es Jeruk Murni Anti Galau,Es Jeruk Murni,17000,17000,food & drink,food & drink,True,True,4.3,,"{
+""merchant"": ""Es Jeruk Murni"",
+""amount"": 17000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+165,1,Flip,FLIPTECH,2000408,2000408,transfer,transfer,False,False,3.9,,"{
+""merchant"": ""FLIPTECH"",
+""amount"": 2000408,
+""category"": ""transfer"",
+""is_expense"": false
+}"
+167,1,Indomaret,Indomaret,25000,25000,grocery,grocery,True,True,3.9,,"{
+""merchant"": ""Indomaret"",
+""amount"": 25000,
+""category"": ""grocery"",
+""is_expense"": true
+}"
+169,0,,Spotify,,0,,subscription,,True,3.5,,"{
+""merchant"": ""Spotify"",
+""amount"": 0,
+""category"": ""subscription"",
+""is_expense"": true
+}"
+170,1,Spotify,Spotify,33189,59900,subscription,subscription,True,True,3.7,,"{
+""merchant"": ""Spotify"",
+""amount"": 59900,
+""category"": ""subscription"",
+""is_expense"": true
+}"
+171,1,Superindo,Superindo,4190,4190,grocery,grocery,True,True,3.8,,"{
+""merchant"": ""Superindo"",
+""amount"": 4190,
+""category"": ""grocery"",
+""is_expense"": true
+}"
+172,1,Superindo,Superindo,36280,36280,grocery,grocery,True,True,3.8,,"{
+""merchant"": ""Superindo"",
+""amount"": 36280,
+""category"": ""grocery"",
+""is_expense"": true
+}"
+173,1,Jago Coffee,jagocoffee,8000,8000,food & drink,food & drink,True,True,4.0,,"{
+""merchant"": ""jagocoffee"",
+""amount"": 8000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+174,1,Superindo,SUPERINDO,6995,6995,grocery,grocery,True,True,3.9,,"{
+""merchant"": ""SUPERINDO"",
+""amount"": 6995,
+""category"": ""grocery"",
+""is_expense"": true
+}"
+175,1,Waroenk Kito,Waroenk Kito,35200,35200,food & drink,food & drink,True,True,4.2,,"{
+""merchant"": ""Waroenk Kito"",
+""amount"": 35200,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+176,1,Alfamart,Alfamart,4000,4000,grocery,grocery,True,True,4.0,,"{
+""merchant"": ""Alfamart"",
+""amount"": 4000,
+""category"": ""grocery"",
+""is_expense"": true
+}"
+177,1,Grab,GRAB,8000,8000,transport,transport,True,True,3.7,,"{
+""merchant"": ""GRAB"",
+""amount"": 8000,
+""category"": ""transport"",
+""is_expense"": true
+}"
+178,1,TransJakarta,TRANSJAKARTA,3500,3500,transport,transport,True,True,4.0,,"{
+""merchant"": ""TRANSJAKARTA"",
+""amount"": 3500,
+""category"": ""transport"",
+""is_expense"": true
+}"
+179,1,Nasi Uduk Betawi Babekite,Nasi Uduk Betawi,12000,12000,food & drink,food & drink,True,True,4.3,,"{
+""merchant"": ""Nasi Uduk Betawi"",
+""amount"": 12000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+180,1,Rocky Rooster,Rocky Rooster,19000,19000,food & drink,food & drink,True,True,4.1,,"{
+""merchant"": ""Rocky Rooster"",
+""amount"": 19000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+181,1,Nasi Goreng Akang,Nasi Goreng Akang,23000,23000,food & drink,food & drink,True,True,4.3,,"{
+""merchant"": ""Nasi Goreng Akang"",
+""amount"": 23000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+182,1,Superindo,SUPERINDO,7745,7745,grocery,grocery,True,True,3.9,,"{
+""merchant"": ""SUPERINDO"",
+""amount"": 7745,
+""category"": ""grocery"",
+""is_expense"": true
+}"
+183,0,,Alfamart,,11200,,grocery,,True,4.0,,"{
+""merchant"": ""Alfamart"",
+""amount"": 11200,
+""category"": ""grocery"",
+""is_expense"": true
+}"
+184,1,Subway,Subway,29000,29000,food & drink,food & drink,True,True,3.9,,"{
+""merchant"": ""Subway"",
+""amount"": 29000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+185,1,TransJakarta,TransJakarta,2000,2000,transport,transport,True,True,3.7,,"{
+""merchant"": ""TransJakarta"",
+""amount"": 2000,
+""category"": ""transport"",
+""is_expense"": true
+}"
+186,1,Bakmi Bangka Apo,Bakmi Bangka Apo,22000,22000,food & drink,food & drink,True,True,4.4,,"{
+""merchant"": ""Bakmi Bangka Apo"",
+""amount"": 22000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+187,1,Superindo,Superindo,37735,37735,grocery,grocery,True,True,3.8,,"{
+""merchant"": ""Superindo"",
+""amount"": 37735,
+""category"": ""grocery"",
+""is_expense"": true
+}"
+188,1,Indomaret,Indomaret,27000,27000,grocery,grocery,True,True,3.9,,"{
+""merchant"": ""Indomaret"",
+""amount"": 27000,
+""category"": ""grocery"",
+""is_expense"": true
+}"
+189,1,TransJakarta,TransJakarta,3500,3500,transport,transport,True,True,3.8,,"{
+""merchant"": ""TransJakarta"",
+""amount"": 3500,
+""category"": ""transport"",
+""is_expense"": true
+}"
+190,1,Nasi Uduk Betawi Babekite,Nasi Uduk Betawi,12000,12000,food & drink,food & drink,True,True,4.3,,"{
+""merchant"": ""Nasi Uduk Betawi"",
+""amount"": 12000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+192,1,Alfamart,Alfamart,4000,4000,grocery,grocery,True,True,4.0,,"{
+""merchant"": ""Alfamart"",
+""amount"": 4000,
+""category"": ""grocery"",
+""is_expense"": true
+}"
+193,1,Krom,KROM BANK,2202500,2200000,transfer,transfer,False,True,4.0,,"{
+""merchant"": ""KROM BANK"",
+""amount"": 2200000,
+""category"": ""transfer"",
+""is_expense"": true
+}"
+195,1,Nasi Goreng Akang,Nasi Goreng Akang,21000,21000,food & drink,food & drink,True,True,4.8,,"{
+""merchant"": ""Nasi Goreng Akang"",
+""amount"": 21000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+196,1,Alfamart,Alfamart,25000,25000,grocery,grocery,True,True,4.3,,"{
+""merchant"": ""Alfamart"",
+""amount"": 25000,
+""category"": ""grocery"",
+""is_expense"": true
+}"
+197,1,Rocky Rooster,Rocky Rooster,19000,19000,food & drink,food & drink,True,True,4.7,,"{
+""merchant"": ""Rocky Rooster"",
+""amount"": 19000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+198,1,Gokana,Gokana,16000,16000,food & drink,other,True,True,4.1,,"{
+""merchant"": ""Gokana"",
+""amount"": 16000,
+""category"": ""other"",
+""is_expense"": true
+}"
+199,1,Mie Ayam Bang Gons,mie ayam bang gons,18000,18000,food & drink,food & drink,True,True,4.3,,"{
+""merchant"": ""mie ayam bang gons"",
+""amount"": 18000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+200,1,Nani Jamu,NANI JAMU,6000,6000,health,health,True,True,4.1,,"{
+""merchant"": ""NANI JAMU"",
+""amount"": 6000,
+""category"": ""health"",
+""is_expense"": true
+}"
+201,1,Nasi Goreng Pak Rudi,Nasi Goreng Pak Rudi,20000,20000,food & drink,food & drink,True,True,4.5,,"{
+""merchant"": ""Nasi Goreng Pak Rudi"",
+""amount"": 20000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+202,1,Grab,GRAB,7000,7000,transport,transport,True,True,3.8,,"{
+""merchant"": ""GRAB"",
+""amount"": 7000,
+""category"": ""transport"",
+""is_expense"": true
+}"
+203,1,Superindo,Superindomediterrania,9300,9300,grocery,grocery,True,True,4.3,,"{
+""merchant"": ""Superindomediterrania"",
+""amount"": 9300,
+""category"": ""grocery"",
+""is_expense"": true
+}"
+204,1,Wingstop,Wingstop,27000,27000,food & drink,food & drink,True,True,4.5,,"{
+""merchant"": ""Wingstop"",
+""amount"": 27000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+205,1,Wingstop,Wingstop,27000,27000,food & drink,food & drink,True,True,4.7,,"{
+""merchant"": ""Wingstop"",
+""amount"": 27000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+206,0,,Wingstop,,27000,,food & drink,,True,4.5,,"{
+""merchant"": ""Wingstop"",
+""amount"": 27000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+207,1,Milkshake Barista,MILKSHAKE BARISTA,12000,12000,food & drink,food & drink,True,True,4.9,,"{
+""merchant"": ""MILKSHAKE BARISTA"",
+""amount"": 12000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+208,1,Kebab Bang Ali,KEBAB BANG ALI,24000,24000,food & drink,food & drink,True,True,5.0,,"{
+""merchant"": ""KEBAB BANG ALI"",
+""amount"": 24000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+209,1,Nasi Goreng Akang,Nasi Goreng Akang,21000,21000,food & drink,food & drink,True,True,5.0,,"{
+""merchant"": ""Nasi Goreng Akang"",
+""amount"": 21000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+210,1,Indomaret,Indomaret,3000,3000,grocery,grocery,True,True,4.5,,"{
+""merchant"": ""Indomaret"",
+""amount"": 3000,
+""category"": ""grocery"",
+""is_expense"": true
+}"
+211,1,Alfamart,Alfamart,4000,4000,grocery,grocery,True,True,4.6,,"{
+""merchant"": ""Alfamart"",
+""amount"": 4000,
+""category"": ""grocery"",
+""is_expense"": true
+}"
+212,1,Waroenk Kito,WAROENK KITO,35200,35200,food & drink,food & drink,True,True,4.5,,"{
+""merchant"": ""WAROENK KITO"",
+""amount"": 35200,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+213,1,Warteg Fitri,WARTEG FITRI,15000,15000,food & drink,food & drink,True,True,4.3,,"{
+""merchant"": ""WARTEG FITRI"",
+""amount"": 15000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+214,1,Tokopedia,TOKOPEDIA,64500,64500,shopping,shopping,True,True,3.9,,"{
+""merchant"": ""TOKOPEDIA"",
+""amount"": 64500,
+""category"": ""shopping"",
+""is_expense"": true
+}"
+216,1,TransJakarta,TRANSJAKARTA,3500,3500,transport,transport,True,True,4.0,,"{
+""merchant"": ""TRANSJAKARTA"",
+""amount"": 3500,
+""category"": ""transport"",
+""is_expense"": true
+}"
+217,1,Grab,GRAB,9000,9000,transport,transport,True,True,3.7,,"{
+""merchant"": ""GRAB"",
+""amount"": 9000,
+""category"": ""transport"",
+""is_expense"": true
+}"
+218,1,Waroenk Kito,WAROENK KITO,35200,35200,food & drink,food & drink,True,True,4.2,,"{
+""merchant"": ""WAROENK KITO"",
+""amount"": 35200,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+222,1,Flip,FLIPTECH LENTERA,2800341,2800341,transfer,transfer,False,True,4.3,,"{
+""merchant"": ""FLIPTECH LENTERA"",
+""amount"": 2800341,
+""category"": ""transfer"",
+""is_expense"": true
+}"
+225,1,Waroenk Kito,WAROENK KITO,35200,35200,food & drink,food & drink,True,True,4.3,,"{
+""merchant"": ""WAROENK KITO"",
+""amount"": 35200,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+226,1,Nani Jamu,NANI JAMU,6000,6000,health,health,True,True,4.0,,"{
+""merchant"": ""NANI JAMU"",
+""amount"": 6000,
+""category"": ""health"",
+""is_expense"": true
+}"
+228,1,Ampera,Ampera,19000,19000,food & drink,transport,True,True,3.9,,"{
+""merchant"": ""Ampera"",
+""amount"": 19000,
+""category"": ""transport"",
+""is_expense"": true
+}"
+230,1,Katsumoora,KATSUMOORA,69300,69300,food & drink,shopping,True,True,4.1,,"{
+""merchant"": ""KATSUMOORA"",
+""amount"": 69300,
+""category"": ""shopping"",
+""is_expense"": true
+}"
+232,1,Nani Jamu,NANI JAMU,6000,6000,health,health,True,True,4.0,,"{
+""merchant"": ""NANI JAMU"",
+""amount"": 6000,
+""category"": ""health"",
+""is_expense"": true
+}"
+233,1,Restu Javanese Chinese Food,Restu Javanese Chinese Food,29000,29000,food & drink,food & drink,True,True,4.4,,"{
+""merchant"": ""Restu Javanese Chinese Food"",
+""amount"": 29000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+235,1,Warteg Fitri,WARTEG FITRI,24000,24000,food & drink,entertainment,True,True,4.2,,"{
+""merchant"": ""WARTEG FITRI"",
+""amount"": 24000,
+""category"": ""entertainment"",
+""is_expense"": true
+}"
+236,1,Bhinneka Rasa,Bhinneka Rasa,24000,24000,food & drink,food & drink,True,True,4.3,,"{
+""merchant"": ""Bhinneka Rasa"",
+""amount"": 24000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+238,1,Superindo,SUPERINDO MEDITERANIA,9660,9660,grocery,grocery,True,True,4.5,,"{
+""merchant"": ""SUPERINDO MEDITERANIA"",
+""amount"": 9660,
+""category"": ""grocery"",
+""is_expense"": true
+}"
+239,1,Bhinneka Rasa,Bhinneka Rasa,38000,38000,food & drink,shopping,True,True,4.2,,"{
+""merchant"": ""Bhinneka Rasa"",
+""amount"": 38000,
+""category"": ""shopping"",
+""is_expense"": true
+}"
+242,1,Nasi Goreng Pak Rudi,Nasi Goreng Pak Rudi,20000,20000,food & drink,food & drink,True,True,4.4,,"{
+""merchant"": ""Nasi Goreng Pak Rudi"",
+""amount"": 20000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+243,1,Nordu Bakes,Nordu Bakes,40000,40000,food & drink,food & drink,True,True,4.2,,"{
+""merchant"": ""Nordu Bakes"",
+""amount"": 40000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+244,1,Shopee,Shopee,113500,113500,shopping,shopping,True,True,3.7,,"{
+""merchant"": ""Shopee"",
+""amount"": 113500,
+""category"": ""shopping"",
+""is_expense"": true
+}"
+245,1,Bhinneka Rasa,Bhinneka Rasa,34000,34000,food & drink,food & drink,True,True,4.4,,"{
+""merchant"": ""Bhinneka Rasa"",
+""amount"": 34000,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+246,1,Alfamart,Alfamart,2500,2500,grocery,grocery,True,True,4.2,,"{
+""merchant"": ""Alfamart"",
+""amount"": 2500,
+""category"": ""grocery"",
+""is_expense"": true
+}"
+247,1,Waroenk Kito,WAROENK,35200,35200,food & drink,food & drink,True,True,4.2,,"{
+""merchant"": ""WAROENK"",
+""amount"": 35200,
+""category"": ""food & drink"",
+""is_expense"": true
+}"
+248,1,Lawson,LAWSON,1500,1500,grocery,grocery,True,True,3.9,,"{
+""merchant"": ""LAWSON"",
+""amount"": 1500,
+""category"": ""grocery"",
+""is_expense"": true
+}"
+249,1,Nani Jamu,NANI JAMU,6000,6000,health,health,True,True,4.1,,"{
+""merchant"": ""NANI JAMU"",
+""amount"": 6000,
+""category"": ""health"",
+""is_expense"": true
+}"

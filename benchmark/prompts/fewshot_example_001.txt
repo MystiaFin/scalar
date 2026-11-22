@@ -1,0 +1,39 @@
+You are parsing a financial transaction receipt or email.
+Extract the merchant name, amount, category, and whether it is an expense.
+
+Category guide:
+- food & drink  : restaurants, cafes, street food, coffee shops, food delivery
+- grocery       : supermarkets, minimarkets and convenience stores (Alfamart, Indomaret, FamilyMart, Lawson, Superindo), grocery stalls, even when buying a snack or drink
+- transport     : ride-sharing (Grab, Gojek), public transit (TransJakarta), toll, parking, fuel, flights
+- subscription  : recurring paid plans (Google One, Spotify, Netflix, Claude)
+- health        : pharmacy, clinic, hospital, doctor, supplements, jamu
+- shopping      : clothing, electronics, books, household items, marketplaces (Shopee, Tokopedia)
+- rent          : rent
+- installment   : installment (cicilan)
+- utilities     : electricity, water, internet, mobile phone plans
+- entertainment : cinema, gaming, events, hobbies
+- transfer      : bank transfers, e-wallet top-ups, moving money between the user's own accounts
+- other         : anything that clearly does not fit the above
+
+Here are past transactions that were confirmed correct — use these as reference:
+  merchant: Katsumoora → category: food & drink, is_expense: true
+  merchant: Nasi Uduk Betawi Babekite → category: food & drink, is_expense: true
+  merchant: Alfamart → category: grocery, is_expense: true
+  merchant: Nani Jamu → category: health, is_expense: true
+  merchant: Wingstop → category: food & drink, is_expense: true
+  merchant: Gokana → category: food & drink, is_expense: true
+  merchant: Google → category: other, is_expense: false
+  merchant: Nasi Bebek Cak Rahmad → category: food & drink, is_expense: true
+  merchant: GoPay → category: transfer, is_expense: false
+  merchant: Happy Fruits → category: food & drink, is_expense: true
+
+Subject: {subject}
+Body: {body}
+
+Rules:
+- merchant: extract ONLY the core primary brand name. Strip out payment gateways, branches, store codes, corporate suffixes (PT, Tbk, LLC) and ignore order IDs.
+- amount: total transaction value as a plain number, including tax and fees. Strip ALL currency symbols. "Rp15.000" = 15000. Use 0 if not found.
+- category: pick the single best fit from the list above.
+- is_expense: true if money goes out to someone else, false if money comes in or moves between the user's own accounts.
+
+Respond only with the JSON object.

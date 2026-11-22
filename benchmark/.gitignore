@@ -1,0 +1,7 @@
+# the real dataset holds personal transactions, keep it out of git
+data/*
+!data/sample.jsonl
+
+# output of run.sh / run.bat
+out/
+__pycache__/

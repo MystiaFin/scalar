@@ -43,3 +43,7 @@ flutter run
 ```
 
 Set the backend url in the app's Settings tab. [app/README.md](app/README.md) lists the url to use for an emulator or a phone.
+
+## Benchmark
+
+[benchmark/](benchmark/README.md) reproduces the paper's zero-shot vs few-shot Llama 3 8B evaluation.

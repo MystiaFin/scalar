@@ -1,0 +1,37 @@
+{
+  "type": "object",
+  "properties": {
+    "merchant": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "food & drink",
+        "grocery",
+        "transport",
+        "subscription",
+        "health",
+        "shopping",
+        "rent",
+        "installment",
+        "utilities",
+        "entertainment",
+        "transfer",
+        "other"
+      ]
+    },
+    "is_expense": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "merchant",
+    "amount",
+    "category",
+    "is_expense"
+  ]
+}

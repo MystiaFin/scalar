@@ -1,0 +1,167 @@
+SUMMARY (receipts n=113)
+metric                            zeroshot       fewshot
+merchant acc                         0.788         0.805
+amount acc                           0.973         0.982
+is_expense acc                       0.947         0.956
+category acc                         0.885         0.885
+macro_f1                             0.713         0.709
+fake transactions (of 14)               14            14
+failed calls (of 127)                    0             0
+runtime (min)                          9.0           9.1
+
+PER-CLASS zeroshot  (classes with gold samples in macro-F1; * = no gold samples)
+class              n   TP   FP   FN       P       R      F1
+food & drink      54   46    2    8   0.958   0.852   0.902
+grocery           28   27    0    1   1.000   0.964   0.982
+transport          9    9    3    0   0.750   1.000   0.857
+subscription       5    5    1    0   0.833   1.000   0.909
+health             5    4    0    1   1.000   0.800   0.889
+shopping           2    2    2    0   0.500   1.000   0.667
+rent               1    0    0    1   0.000   0.000   0.000
+installment        1    1    0    0   1.000   1.000   1.000
+utilities*         0    0    2    0   0.000   0.000   0.000
+entertainment*     0    0    2    0   0.000   0.000   0.000
+transfer           7    6    0    1   1.000   0.857   0.923
+other              1    0    1    1   0.000   0.000   0.000
+
+CONFUSION (wrong only) zeroshot: gold -> pred : count
+  food & drink -> transport : 3
+  food & drink -> shopping : 2
+  rent -> utilities : 1
+  health -> food & drink : 1
+  other -> subscription : 1
+  food & drink -> other : 1
+  grocery -> food & drink : 1
+  transfer -> entertainment : 1
+  food & drink -> utilities : 1
+  food & drink -> entertainment : 1
+
+MERCHANT ERRORS zeroshot (24): id | gold | pred
+  007 | Google One | Google
+  013 | Waroenk Kito | Waroenk Kito Mediterania
+  022 | Jago Coffee | jagocoffee
+  028 | [PENERIMA_1] | sewa
+  053 | Bakmi Bangka Apo | Bakmi Bangka
+  064 | Bicarakan.id | BICARAKAN
+  071 | Claude | Google Claude
+  111 | Google One | Google
+  131 | [PENERIMA_2] | hp
+  152 | [PENERIMA_3] | BCA
+  162 | [PENERIMA_4] | BCA
+  163 | Es Jeruk Murni Anti Galau | Es Jeruk Murni
+  165 | Flip | FlipTech
+  173 | Jago Coffee | jagocoffee
+  175 | Waroenk Kito | Waroenk Kito Mediterania
+  179 | Nasi Uduk Betawi Babekite | Nasi Uduk Betawi
+  186 | Bakmi Bangka Apo | Bakmi Bangka
+  190 | Nasi Uduk Betawi Babekite | Nasi Uduk Betawi
+  193 | Krom | KROM BANK
+  213 | Warteg Fitri | WarteG
+  222 | Flip | FLIPTECH
+  233 | Restu Javanese Chinese Food | Restu Javanese Chinese
+  235 | Warteg Fitri | WarteG
+  238 | Superindo | Superindonesia
+
+AMOUNT ERRORS zeroshot (3): id | gold | pred
+  170 | 33189 | 59900
+  193 | 2202500 | 2200000
+  248 | 1500 | 15000
+
+NON-RECEIPTS zeroshot: id | merchant | amount | category | is_expense
+  009 | Google One | 85470 | subscription | True
+  024 | Gemini | 0 | subscription | True
+  025 | Google | 85470 | subscription | True
+  033 | Cloudflare | 0 | subscription | True
+  037 | Google | 0 | subscription | True
+  046 | Claude | 0 | subscription | True
+  081 | Cloudflare | 0 | subscription | True
+  118 | Google | 85470 | subscription | True
+  119 | Gemini | 0 | subscription | True
+  138 | Cloudflare | 0 | subscription | True
+  142 | Google | 0 | subscription | True
+  169 | Spotify | 0 | subscription | True
+  183 | Alfamart | 11200 | grocery | True
+  206 | Wingstop | 27000 | food & drink | True
+
+PER-CLASS fewshot  (classes with gold samples in macro-F1; * = no gold samples)
+class              n   TP   FP   FN       P       R      F1
+food & drink      54   46    2    8   0.958   0.852   0.902
+grocery           28   27    1    1   0.964   0.964   0.964
+transport          9    9    2    0   0.818   1.000   0.900
+subscription       5    5    1    0   0.833   1.000   0.909
+health             5    4    0    1   1.000   0.800   0.889
+shopping           2    2    2    0   0.500   1.000   0.667
+rent               1    1    0    0   1.000   1.000   1.000
+installment        1    0    0    1   0.000   0.000   0.000
+utilities*         0    0    1    0   0.000   0.000   0.000
+entertainment*     0    0    1    0   0.000   0.000   0.000
+transfer           7    6    1    1   0.857   0.857   0.857
+other              1    0    2    1   0.000   0.000   0.000
+
+CONFUSION (wrong only) fewshot: gold -> pred : count
+  food & drink -> other : 2
+  food & drink -> shopping : 2
+  transfer -> transport : 1
+  health -> food & drink : 1
+  other -> subscription : 1
+  food & drink -> utilities : 1
+  grocery -> food & drink : 1
+  installment -> transfer : 1
+  food & drink -> grocery : 1
+  food & drink -> transport : 1
+  food & drink -> entertainment : 1
+
+MERCHANT ERRORS fewshot (22): id | gold | pred
+  003 | GoPay | DOMPET ANAK BANGSA
+  022 | Jago Coffee | jagocoffee
+  028 | [PENERIMA_1] | sewa
+  064 | Bicarakan.id | XDT
+  071 | Claude | Google Claude
+  072 | Claude | Anthropic
+  079 | Waroenk Kito | WAROENK
+  112 | GoPay | DOMPET ANAK BANGSA
+  131 | [PENERIMA_2] | PTCL
+  140 | Nasi Bebek Madura | Nasi Bebek Madura Dan Ay
+  152 | [PENERIMA_3] | myBCA
+  162 | [PENERIMA_4] | PENERIMA_4
+  163 | Es Jeruk Murni Anti Galau | Es Jeruk Murni
+  165 | Flip | FLIPTECH
+  173 | Jago Coffee | jagocoffee
+  179 | Nasi Uduk Betawi Babekite | Nasi Uduk Betawi
+  190 | Nasi Uduk Betawi Babekite | Nasi Uduk Betawi
+  193 | Krom | KROM BANK
+  203 | Superindo | Superindomediterrania
+  222 | Flip | FLIPTECH LENTERA
+  238 | Superindo | SUPERINDO MEDITERANIA
+  247 | Waroenk Kito | WAROENK
+
+AMOUNT ERRORS fewshot (2): id | gold | pred
+  170 | 33189 | 59900
+  193 | 2202500 | 2200000
+
+NON-RECEIPTS fewshot: id | merchant | amount | category | is_expense
+  009 | Google One | 85470 | subscription | True
+  024 | Gemini | 0 | subscription | True
+  025 | Google One | 85470 | subscription | True
+  033 | Cloudflare | 0 | other | False
+  037 | Google | 0 | subscription | True
+  046 | Claude by Anthropic | 0 | subscription | True
+  081 | Cloudflare | 0 | subscription | False
+  118 | Google | 85470 | subscription | True
+  119 | Gemini | 0 | subscription | True
+  138 | Cloudflare | 0 | subscription | True
+  142 | Google | 0 | subscription | True
+  169 | Spotify | 0 | subscription | True
+  183 | Alfamart | 11200 | grocery | True
+  206 | Wingstop | 27000 | food & drink | True
+
+CATEGORY CHANGES zeroshot -> fewshot: id | gold | zeroshot | fewshot
+  003 | transfer | transfer | transport  (broke)
+  028 | rent | utilities | rent  (fixed)
+  079 | food & drink | other | utilities  (still wrong)
+  131 | installment | installment | transfer  (broke)
+  150 | food & drink | transport | other  (still wrong)
+  154 | food & drink | food & drink | grocery  (broke)
+  198 | food & drink | transport | other  (still wrong)
+  222 | transfer | entertainment | transfer  (fixed)
+  225 | food & drink | utilities | food & drink  (fixed)
