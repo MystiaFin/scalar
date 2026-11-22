@@ -19,7 +19,7 @@ const (
 )
 
 func runSync() {
-    summary, err := email.Sync(syncDays, extract)
+    summary, err := email.Sync(syncDays, email.Extract)
     if err != nil {
         log.Printf("sync skipped: %v", err)
         return
