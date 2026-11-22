@@ -1,3 +1,6 @@
+THIS IS MY COLLEGE ASSIGNMENT
+NOT A REAL PROJECT
+
 # scalar
 
 Go backend in `backend/`, Flutter app in `app/`.
